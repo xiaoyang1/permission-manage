@@ -25,5 +25,8 @@
     <!-- 加载映射文件 mapper,映射文件的注册 -->
     <mappers>
         <mapper class="com.mapper.UserMapper"></mapper>
+        <mapper class="com.mapper.RoleMapper"></mapper>
+        <mapper class="com.mapper.ResourceMapper"></mapper>
+
     </mappers>
 </configuration>

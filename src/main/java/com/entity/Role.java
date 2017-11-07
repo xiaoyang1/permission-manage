@@ -1,23 +1,32 @@
 package com.entity;
 
 public class Role {
-    private int permission_value;
+    private int id;
+    private String name;
     private String description;
 
     public Role() {
     }
 
-    public Role(int permission_value, String description) {
-        this.permission_value = permission_value;
+    public Role(String name, String description) {
+        this.name = name;
         this.description = description;
     }
 
-    public int getPermission_value() {
-        return permission_value;
+    public int getId() {
+        return id;
     }
 
-    public void setPermission_value(int permission_value) {
-        this.permission_value = permission_value;
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getDescription() {
@@ -31,7 +40,8 @@ public class Role {
     @Override
     public String toString() {
         return "Role{" +
-                "permission_value=" + permission_value +
+                "id=" + id +
+                ", name='" + name + '\'' +
                 ", description='" + description + '\'' +
                 '}';
     }
